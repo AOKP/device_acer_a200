@@ -41,7 +41,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
-    com.android.future.usb.accessory
+    com.android.future.usb.accessory \
+    libaudioutils \
+    audio.primary.picasso_e
 
 # inherit iconia-common
 $(call inherit-product, device/acer/t20-common/t20-common.mk)
