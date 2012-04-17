@@ -14,16 +14,10 @@
 # limitations under the License.
 #
 
-
 # include acer t20 common
 include device/acer/t20-common/BoardConfigCommon.mk
 
-TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := picasso_e
-
-BOARD_KERNEL_CMDLINE := 
-BOARD_KERNEL_BASE := 0x10000000
-BOARD_PAGE_SIZE := 0x00000800
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
