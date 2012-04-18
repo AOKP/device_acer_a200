@@ -32,26 +32,18 @@ PRODUCT_COPY_FILES += \
     device/acer/picasso_e/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
     device/acer/picasso_e/prebuilt/usr/idc/acer-touch.idc:system/usr/idc/acer-touch.idc \
 
-
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=wifi-only
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-PRODUCT_PACKAGES += \
-    com.android.future.usb.accessory
-
-# inherit iconia-common
-$(call inherit-product, device/acer/t20-common/t20-common.mk)
+$(call inherit-product, build/target/product/full_base.mk)
 
 # inherit proprietary files
 $(call inherit-product-if-exists, vendor/acer/picasso_e/picasso_e-vendor.mk)
 
-# include iconia-common
+# inherit iconia-common
 $(call inherit-product, device/acer/t20-common/t20-common.mk)
-
-$(call inherit-product, build/target/product/full_base.mk)
 
 PRODUCT_DEVICE := picasso_e
 PRODUCT_MODEL  := A200
