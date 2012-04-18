@@ -24,8 +24,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/kernel:kernel \
     $(LOCAL_PATH)/prebuilt/modules/bcm4329.ko:system/lib/modules/bcm4329.ko \
-    $(LOCAL_PATH)/prebuilt/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
-    $(LOCAL_PATH)/prebuilt/modules/ufsd.ko:system/lib/modules/ufsd.ko \
+    $(LOCAL_PATH)/prebuilt/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
 
 # prebuilt configs
 PRODUCT_COPY_FILES += \
