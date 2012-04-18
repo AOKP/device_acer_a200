@@ -19,6 +19,9 @@ include device/acer/t20-common/BoardConfigCommon.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := picasso_e
 
+TARGET_KERNEL_SOURCE := kernel/acer/t20-common
+TARGET_KERNEL_CONFIG := cyanogenmod_picasso_e_defconfig
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 6291456

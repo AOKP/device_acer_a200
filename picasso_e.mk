@@ -20,12 +20,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/ramdisk/init.picasso_e.usb.rc:root/init.picasso_e.usb.rc \
     $(LOCAL_PATH)/prebuilt/ramdisk/ueventd.picasso_e.rc:root/ueventd.picasso_e.rc \
 
-# kernel & modules
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/kernel:kernel \
-    $(LOCAL_PATH)/prebuilt/modules/bcm4329.ko:system/lib/modules/bcm4329.ko \
-    $(LOCAL_PATH)/prebuilt/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
-
 # prebuilt configs
 PRODUCT_COPY_FILES += \
     device/acer/picasso_e/prebuilt/etc/vold.fstab:system/etc/vold.fstab \
