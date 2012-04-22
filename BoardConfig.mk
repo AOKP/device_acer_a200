@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2011 The Android Open-Source Project
+# Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,6 +18,7 @@
 include device/acer/t20-common/BoardConfigCommon.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := picasso_e
+TARGET_OTA_ASSERT_DEVICE := picasso_e,a200
 
 TARGET_KERNEL_SOURCE := kernel/acer/t20-common
 TARGET_KERNEL_CONFIG := cyanogenmod_picasso_e_defconfig
