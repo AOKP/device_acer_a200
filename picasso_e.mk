@@ -22,9 +22,10 @@ PRODUCT_COPY_FILES += \
 
 # prebuilt configs
 PRODUCT_COPY_FILES += \
-    device/acer/picasso_e/prebuilt/etc/vold.fstab:system/etc/vold.fstab \
-    device/acer/picasso_e/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    device/acer/picasso_e/prebuilt/usr/idc/acer-touch.idc:system/usr/idc/acer-touch.idc \
+    $(LOCAL_PATH)/prebuilt/etc/vold.fstab:system/etc/vold.fstab \
+    $(LOCAL_PATH)/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    $(LOCAL_PATH)/prebuilt/usr/idc/acer-touch.idc:system/usr/idc/acer-touch.idc \
+    $(LOCAL_PATH)/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=wifi-only
