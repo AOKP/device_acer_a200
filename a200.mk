@@ -35,11 +35,11 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 $(call inherit-product, build/target/product/full_base.mk)
 
 # inherit proprietary files
-$(call inherit-product-if-exists, vendor/acer/picasso_e/picasso_e-vendor.mk)
+$(call inherit-product-if-exists, vendor/acer/a200/a200-vendor.mk)
 
 # inherit iconia-common
 $(call inherit-product, device/acer/t20-common/t20-common.mk)
 
-PRODUCT_DEVICE := picasso_e
+PRODUCT_DEVICE := a200
 PRODUCT_MODEL  := A200
 

@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/picasso_e.mk
+    $(LOCAL_DIR)/a200.mk
